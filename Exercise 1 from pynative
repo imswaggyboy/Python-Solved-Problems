@@ -33,3 +33,29 @@ for even_index in range(len(l2)):
 print("Element at odd-index positions from list one\n",odd_index_element)
 print("Element at even-index positions from list two\n",even_index_element)
 print("Printing Final third list\n",odd_index_element+even_index_element)
+
+
+
+
+but you know what is this the optimal solution 
+and yes your right this is not the optimal solution
+i directly stumble on using loops and conditional statement 
+then later i realize after watching the solution and hint of the given problem 
+that i didnt used my brain power properly and that fine by sometimes and in the starting phase its okay 
+
+so lets get the optmal one 
+here raher than using loops and contional statements we could have used the "slicing" 
+so here how its go 
+slice[starting:ending:skip]
+im going to start with 1 for odd index  and 0 for even index and skip will be 2 
+and i do think you got it 
+
+/////////////////////optimal-code////////////////////////////
+l1 = [3, 6, 9, 12, 15, 18, 21]
+l2 = [4, 8, 12, 16, 20, 24, 28]
+
+#fuck i could have used slicing man 
+print("Element at odd-index positions from list one\n",l1[1::2])
+print("Element at even-index positions from list two\n",l2[0::2])
+print("Printing Final third list\n",l1[1::2]+l2[0::2])
+
