@@ -1,0 +1,35 @@
+given:
+l1 = [3, 6, 9, 12, 15, 18, 21]
+l2 = [4, 8, 12, 16, 20, 24, 28]
+
+expected output:
+Element at odd-index positions from list one
+[6, 12, 18]
+Element at even-index positions from list two
+[4, 12, 20, 28]
+
+Printing Final third list
+[6, 12, 18, 4, 12, 20, 28]
+
+//////////////code/////////////////
+
+
+l1 = [3, 6, 9, 12, 15, 18, 21]
+l2 = [4, 8, 12, 16, 20, 24, 28]
+
+odd_index_element = []
+even_index_element = []
+
+for odd_index in range(len(l1)):
+    if odd_index%2!=0:
+        odd_index_element.append(l1[odd_index])
+    else: continue
+for even_index in range(len(l2)):
+    if even_index%2==0:
+        even_index_element.append(l2[even_index])
+    else: continue
+
+
+print("Element at odd-index positions from list one\n",odd_index_element)
+print("Element at even-index positions from list two\n",even_index_element)
+print("Printing Final third list\n",odd_index_element+even_index_element)
