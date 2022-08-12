@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    i = int(input())
+    lis = list(map(int,input().strip().split()))[:i]
+    z = max(lis)
+    while z==max(lis):
+        lis.remove(max(lis))
+    print(max(lis))
+    
+    
+    
+    the explaination is:
+    z = is the variable which will store max(lis) 
+    then im going to use while loop with condition till the z ==max(lis)
+    and it will remove the max number from the list 
+    till the number is equal to z
+    and if the number is not equal to z then it will print the max(lis)
