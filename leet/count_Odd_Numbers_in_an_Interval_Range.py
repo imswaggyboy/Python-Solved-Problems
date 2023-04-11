@@ -1,7 +1,9 @@
----------------------------------------------------------------------
-brute force approach
-time:O(n)
-----------------------------------------------------------------------
+# 1523. Count Odd Numbers in an Interval Range
+
+# ---------------------------------------------------------------------
+# brute force approach
+# time:O(n)
+# ----------------------------------------------------------------------
 
 class Solution(object):
     def countOdds(self, low, high):
@@ -12,10 +14,10 @@ class Solution(object):
         return len(lst)
 
 
----------------------------------------------------------------------
-jst a mathematics approach (guess what i dont i learnt from g4g) 
-time:O(1)
-----------------------------------------------------------------------
+# ---------------------------------------------------------------------
+# jst a mathematics approach (guess what i dont i learnt from g4g) 
+# time:O(1)
+# ----------------------------------------------------------------------
 
 class Solution(object):
     def countOdds(self, low, high):
